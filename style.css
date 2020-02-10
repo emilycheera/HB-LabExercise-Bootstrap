@@ -1,0 +1,19 @@
+.bg-light {
+    background-color: #77B243 !important;
+}
+
+.nav-link {
+    color: #ffffff !important;
+}
+
+.melon-image {
+    border: 20px solid white;
+}
+
+.spacer {
+    height: 60px;
+}
+
+.descriptions {
+    text-align: center;
+}
