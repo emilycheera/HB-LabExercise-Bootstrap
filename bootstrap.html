@@ -39,25 +39,30 @@
     </ul>
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#">Login</a>
+        <a class="nav-link" data-toggle="modal" data-target="#exampleModal" href="#">Login</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Favorite Melons</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Settings</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Profile</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Settings
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Favorite Melons</a>
+          <a class="dropdown-item" href="#">Profile</a>
+          <a class="dropdown-item" href="#">Settings</a>
+        </div>
       </li>
     </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
   </div>
 </nav>
 
 
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-5">
+        <div class="col-10 col-md-5">
             <img src="melon.jpg" class="img-fluid melon-image" alt="Responsive image">
         </div>
     </div>
@@ -65,7 +70,7 @@
 
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-5">
+        <div class="col-10 col-md-5">
             <p>
                 We deliver only the highest quality domestic and exotic melons from local, independent farmers from around the world. Our melons are delivered quickly with the greatest care. We guarantee every order, every time.
             </p>
@@ -78,19 +83,19 @@
 
 <div class="container">
     <div class="row justify-content-center descriptions">
-        <div class="col-4">
+        <div class="col-md-4 col-12">
             <h3><i class="fas fa-trophy"></i> Award Winning</h3>
             <p>
                 Don't take our word for it. See all the awards our melons have earned.
             </p>
         </div>
-        <div class="col-4">
+        <div class="col-md-4 col-12">
             <h3><i class="fas fa-globe"></i> Huge Selection</h3>
             <p>
                 We import melons from all over the world, ensuring we have every melon you could possibly desire.
             </p>
         </div>
-        <div class="col-4">
+        <div class="col-md-4 col-12">
             <h3><i class="fas fa-certificate"></i> Certified Sustainable</h3>
             <p>
                 Our melons are sourced only from sustainable, organic local farmers. These are the healthiest melons you'll ever eat.
@@ -104,7 +109,7 @@
 
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-9 invisible-sm">
+        <div class="col-9 d-none d-md-block">
             <table class="table table-striped">
               <thead>
                 <tr>
@@ -139,13 +144,39 @@
     </div>
 </div>
 
-<div class="container spacer">
+<div class="container spacer d-none d-md-block">
 </div>
 
-
-
-
-
+<<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Hello.</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <!-- You need this in order to use JS-based components in the 

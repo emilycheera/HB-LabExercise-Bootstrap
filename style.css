@@ -17,3 +17,12 @@
 .descriptions {
     text-align: center;
 }
+
+.btn-outline-success {
+    color: #fff;
+    border-color: #fff;
+}
+
+.form-control {
+    margin-left: auto;
+}
